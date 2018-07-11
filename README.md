@@ -1,27 +1,44 @@
-# PizzaRating
+<img src="http://assets.angular.schule/header-angular-mitpizza.png">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+**Speaker:** Ferdinand Malcher<br>
+**Date:** 17. Juli 2018<br>
+**Location:** Fensterplatz Heidelberg<br>
 
-## Development server
+<hr>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is the example app for the first Angular Meetup in Heidelberg.
+We will bring it to life together.
 
-## Code scaffolding
+### Install and run
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You need the Angular CLI to be installed globally:
 
-## Build
+```bash
+npm install @angular/cli
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Clone the repo and run the local installation:
 
-## Running unit tests
+```bash
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+You might want to build the `cart` library first which is part of this repo:
 
-## Running end-to-end tests
+```bash
+ng run cart:build
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+After that you're ready to start the app:
 
-## Further help
+```bash
+ng serve
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Open your browser at `http://localhost:4200` to see it in action.
+
+<hr>
+
+<img src="http://assets.angular.schule/logo-angular-schule.png" height="60">
+
+### &copy; 2018 https://angular.schule, Version from 05.04.2018
