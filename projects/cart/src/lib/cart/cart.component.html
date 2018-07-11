@@ -1,0 +1,15 @@
+<h3>Ordered pizzas</h3>
+
+
+<div class="mb-5" *ngIf="orders.length; else noOrders">
+  <div class="row">
+    <div class="col-3" *ngFor="let pizza of orders">
+      <lib-cart-item [pizza]="pizza"></lib-cart-item>
+    </div>
+  </div>
+  <div class="alert alert-success"><strong>Cart total: {{ total | currency:'EUR' }}</strong></div>
+</div>
+
+<ng-template #noOrders>
+  <div class="alert alert-warning mt-2">No pizzas ordered</div>
+</ng-template>
