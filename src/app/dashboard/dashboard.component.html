@@ -1,0 +1,7 @@
+<lib-cart [orders]="orderedPizzas"></lib-cart>
+
+
+<app-pizza
+  *ngFor="let p of pizzas"
+  (order)="addOrder($event)"
+  [pizza]="p"></app-pizza>
